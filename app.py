@@ -27,6 +27,7 @@ if research != "All":
 
 # Key numbers
 c1, c2, c3, c4 = st.columns(4)
+
 c1.metric("Students", len(view))
 if len(view) > 0:
 c2.metric("Average CGPA", f"{view['CGPA'].mean():.2f}")
