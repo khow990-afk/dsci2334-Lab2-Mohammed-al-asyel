@@ -26,7 +26,7 @@ if research != "All":
     view = view[view["Research"] == (1 if research == "Yes" else 0)]
 
 # Key numbers
-c1.metric("Students", len(view))
+c1, c2, c3, c4 = st.columns(4)
 if len(view) > 0:
     c2.metric("Average CGPA", f"{view['CGPA'].mean():.2f}")
     c3.metric("Average chance", f"{view['Chance of Admit '].mean():.0%}")
