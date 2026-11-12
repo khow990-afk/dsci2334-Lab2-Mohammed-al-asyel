@@ -32,6 +32,7 @@ if len(view) > 0:
 c2.metric("Average CGPA", f"{view['CGPA'].mean():.2f}")
 c3.metric("Average chance", f"{view['Chance of Admit'].mean():.0%}")
 c4.metric("Average GRE", f"{view['GRE Score'].mean():.1f}")
+
 # Chart
 fig, ax = plt.subplots()
 ax.scatter(view["GRE Score"], view["Chance of Admit"], alpha=0.6)
