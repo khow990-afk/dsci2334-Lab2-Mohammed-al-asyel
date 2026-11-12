@@ -50,3 +50,4 @@ ax2.set_xlabel("CGPA")
 ax2.set_ylabel("Number of students")
 st.pyplot(fig2)
 
+min_cgpa = st.sidebar.slider("Minimum CGPA", 6.5, 10.0, 9.0, 0.1)
