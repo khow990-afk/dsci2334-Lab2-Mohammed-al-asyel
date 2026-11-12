@@ -52,7 +52,3 @@ st.pyplot(fig2)
 
 min_cgpa = st.sidebar.slider("Minimum CGPA", 6.5, 10.0, 9.0, 0.1)
 
-python -m venv .venv
-.venv\Scripts\activate # macOS/Linux: source .venv/bin/activate
-pip install -r requirements.txt
-streamlit run app.py
